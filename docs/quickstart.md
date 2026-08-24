@@ -113,7 +113,7 @@ A working connection should return one idea with sources and offer the next Rapi
 You can also start with your own idea:
 
 ```text
-Use Rapidly to test this idea: [customer, problem and proposed change].
+Ask Rapidly to test this idea: [customer, problem and proposed change].
 ```
 
 See [Example prompts](examples.md) for the complete first run.

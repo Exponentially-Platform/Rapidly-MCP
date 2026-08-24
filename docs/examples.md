@@ -21,7 +21,7 @@ Request several ideas only when you want alternatives. Each new idea uses one id
 ## Test an idea you already have
 
 ```text
-Use Rapidly to test this idea:
+Ask Rapidly to test this idea:
 
 Customer: claims agents handling live motor-insurance calls
 Problem: finding the right policy clause and next action takes too long during the call

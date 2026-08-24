@@ -2,7 +2,7 @@
 
 This is a real Rapidly MCP example from 24 August 2026. It shows the shortest useful customer path:
 
-1. Give an AI agent a focused product idea.
+1. Ask Rapidly to test a focused product idea.
 2. The agent calls Rapidly MCP.
 3. Rapidly recommends the smallest useful experiment and supplies the asset build prompt.
 4. The agent builds only that customer-facing asset.
