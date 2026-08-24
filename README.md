@@ -2,7 +2,7 @@
 
 ## Make every AI idea earn the build
 
-AI can make almost any idea look convincing. The question hasn't changed: what should we do?
+AI can make almost any idea look convincing. The question hasn't changed: should you build it?
 
 Rapidly puts our idea-to-experiment method inside any agent that supports remote MCP. That includes Claude Code, Codex, ChatGPT, Hermes, OpenClaude, Grokbot and other MCP-capable agents. Bring a company, a problem or an idea. Rapidly helps your agent turn it into:
 
