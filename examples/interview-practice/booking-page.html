@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a mock interview</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: #d9e0ea;
+      --soft: #f5f8ff;
+      --danger: #b42318;
+      --success: #137333;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding: 18px 24px;
+      font-weight: 700;
+    }
+
+    main {
+      width: min(100% - 32px, 720px);
+      margin: 48px auto 64px;
+    }
+
+    .intro { text-align: center; }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .lead {
+      max-width: 620px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 30px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .benefits li {
+      background: var(--soft);
+      border-radius: 12px;
+      padding: 14px;
+      text-align: center;
+      font-weight: 650;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 18px 50px rgba(23, 32, 51, 0.1);
+    }
+
+    .card h2 { margin: 0 0 6px; }
+    .reassurance { margin: 0 0 24px; color: var(--muted); }
+
+    .summary,
+    .field-error {
+      color: var(--danger);
+      font-size: 0.9rem;
+    }
+
+    .summary {
+      display: none;
+      background: #fff2f0;
+      border: 1px solid #f5c2bd;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      padding: 12px;
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    label,
+    legend {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: 650;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid #aeb8c6;
+      border-radius: 9px;
+      background: #ffffff;
+      color: var(--ink);
+      padding: 11px 12px;
+      font: inherit;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--blue);
+      outline: 3px solid rgba(37, 99, 235, 0.16);
+    }
+
+    textarea { min-height: 100px; resize: vertical; }
+
+    .checkbox {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .checkbox input {
+      width: 18px;
+      height: 18px;
+      margin-top: 3px;
+    }
+
+    .checkbox label { margin: 0; }
+
+    .field-error {
+      min-height: 1.25rem;
+      margin: 5px 0 0;
+    }
+
+    button {
+      width: 100%;
+      border: 0;
+      border-radius: 10px;
+      background: var(--blue);
+      color: #ffffff;
+      cursor: pointer;
+      padding: 13px 18px;
+      font: inherit;
+      font-weight: 750;
+    }
+
+    button:hover { background: var(--blue-dark); }
+    button:focus { outline: 3px solid rgba(37, 99, 235, 0.28); outline-offset: 2px; }
+
+    .confirmation {
+      padding: 24px 4px;
+      text-align: center;
+    }
+
+    .confirmation h2 { color: var(--success); font-size: 2rem; }
+
+    @media (max-width: 620px) {
+      main { margin-top: 32px; }
+      .benefits { grid-template-columns: 1fr; }
+      .card { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>Book a mock interview</header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <h1 id="page-title">Book a mock interview</h1>
+      <p class="lead">Practise with an AI-led mock interview that detects mistakes and gives you targeted drills for the moments that need work.</p>
+      <ul class="benefits" aria-label="What you will get">
+        <li>Mistake detection</li>
+        <li>Targeted drills</li>
+        <li>Focused practice</li>
+      </ul>
+    </section>
+
+    <section class="card" id="booking-card" aria-labelledby="form-title">
+      <h2 id="form-title">Confirm you have a real interview in the next 2–6 weeks.</h2>
+      <p class="reassurance">This is a quick booking request. No payment or account is required.</p>
+
+      <form id="booking-form" novalidate>
+        <div class="summary" id="error-summary" role="alert" tabindex="-1">Please complete the required fields below.</div>
+
+        <div class="field">
+          <label for="full-name">Full name</label>
+          <input id="full-name" name="fullName" type="text" autocomplete="name" required>
+          <p class="field-error" id="full-name-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <p class="field-error" id="email-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="role">Role/target position</label>
+          <input id="role" name="role" type="text" required>
+          <p class="field-error" id="role-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="interview-date">Interview date</label>
+          <input id="interview-date" name="interviewDate" type="date" required>
+          <p class="field-error" id="interview-date-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="time-window">Time window preference</label>
+          <select id="time-window" name="timeWindow">
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <div class="checkbox">
+            <input id="qualification" name="qualification" type="checkbox" required>
+            <label for="qualification">I confirm I have a real interview in the next 2–6 weeks.</label>
+          </div>
+          <p class="field-error" id="qualification-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="focus">Anything you want to focus on?</label>
+          <textarea id="focus" name="focus"></textarea>
+        </div>
+
+        <button type="submit">Book my mock interview</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    const form = document.getElementById('booking-form');
+    const card = document.getElementById('booking-card');
+    const summary = document.getElementById('error-summary');
+    const requiredFields = [
+      ['full-name', 'Enter your full name.'],
+      ['email', 'Enter a valid email address.'],
+      ['role', 'Enter your target position.'],
+      ['interview-date', 'Select your interview date.'],
+      ['qualification', 'Confirm that your interview is in the next 2–6 weeks.']
+    ];
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      let valid = true;
+
+      requiredFields.forEach(([id, message]) => {
+        const field = document.getElementById(id);
+        const error = document.getElementById(`${id}-error`);
+        const missing = field.type === 'checkbox' ? !field.checked : !field.checkValidity();
+        error.textContent = missing ? message : '';
+        field.setAttribute('aria-invalid', String(missing));
+        valid = valid && !missing;
+      });
+
+      summary.style.display = valid ? 'none' : 'block';
+      if (!valid) {
+        summary.focus();
+        return;
+      }
+
+      const confirmation = document.createElement('div');
+      const heading = document.createElement('h2');
+      const note = document.createElement('p');
+
+      confirmation.className = 'confirmation';
+      confirmation.setAttribute('role', 'status');
+      heading.textContent = 'You’re booked.';
+      note.textContent = 'Check your email for next steps.';
+      confirmation.append(heading, note);
+      card.replaceChildren(confirmation);
+    });
+  </script>
+</body>
+</html>

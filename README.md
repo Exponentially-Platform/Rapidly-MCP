@@ -18,15 +18,15 @@ Rapidly designs the experiment. Your AI client or development tool builds the as
 
 [Connect Rapidly](https://www.rapidly.co/rapidly-mcp) · [Setup instructions](docs/quickstart.md) · [Example prompts](docs/examples.md)
 
-## One idea, five minutes
+## One idea, one MCP call
 
-> Test this idea: an AI copilot that helps our claims agents during live phone calls.
+> Test this idea: an AI interview-practice agent for job seekers with a real interview scheduled in the next 2 to 6 weeks.
 
-Rapidly found the risky assumption, set a proposed pass mark and designed the first test. The returned build prompt produced this test asset:
+In a real Rapidly MCP run on 24 August 2026, Rapidly recommended a LinkedIn Fake Door that asks qualified job seekers to book a mock interview. It supplied the hypothesis, behaviour measure, proposed decision rule and build prompt. The AI agent then built only the requested customer-facing booking page.
 
-![A fictional claims workspace used to test whether an agent opens and applies an AI recommendation during a live call.](docs/assets/demo-artifact.png)
+[See the complete interview-practice example](examples/interview-practice/) · [Open the booking-page source](examples/interview-practice/booking-page.html)
 
-This result was assembled from two real Rapidly runs on 20 August 2026. Aldergate Mutual is fictional, and the targets are proposals for review, not measured results. Your run uses your idea.
+This is an example, not a live offer. The target is a proposal for review, not a measured result. No customer bookings were collected.
 
 ## Why can't I just ask AI?
 
