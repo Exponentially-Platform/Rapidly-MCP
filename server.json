@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "co.rapidly/rapidly",
+  "title": "Rapidly",
+  "description": "Test ideas before implementation and coordinate experiments across your portfolio.",
+  "version": "1.0",
+  "websiteUrl": "https://www.rapidly.co",
+  "repository": {
+    "url": "https://github.com/Exponentially-Platform/Rapidly-MCP",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.rapidly.co/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "privacyPolicyUrl": "https://www.rapidly.co/privacy"
+    }
+  }
+}
