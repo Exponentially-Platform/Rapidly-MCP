@@ -16,7 +16,7 @@ From idea to an experiment ready to run in five minutes.
 
 Rapidly designs the experiment. Your AI client or development tool builds the assets. Real customers give you the evidence.
 
-[Connect Rapidly](https://www.rapidly.co/mcp-connect) · [Setup instructions](docs/quickstart.md) · [Example prompts](docs/examples.md)
+[Connect Rapidly](https://www.rapidly.co/rapidly-mcp) · [Setup instructions](docs/quickstart.md) · [Example prompts](docs/examples.md)
 
 ## One idea, five minutes
 
@@ -50,7 +50,7 @@ https://www.rapidly.co/mcp
 
 ### New to Rapidly
 
-Open [rapidly.co/mcp-connect](https://www.rapidly.co/mcp-connect). Enter your name, email and team name. Rapidly creates the account and team, then shows a personal token once.
+Open [rapidly.co/rapidly-mcp](https://www.rapidly.co/rapidly-mcp). Enter your name, email and team name. Rapidly creates the account and team, then shows a personal token once.
 
 The page has tested, copy-ready setup for:
 
@@ -59,7 +59,7 @@ The page has tested, copy-ready setup for:
 
 ### OAuth
 
-Existing Rapidly team members use OAuth. The tested Codex app route works for either a new `/mcp-connect` account or an existing Rapidly team.
+Existing Rapidly team members use OAuth. The tested Codex app route works for either a new `/rapidly-mcp` account or an existing Rapidly team.
 
 OAuth is available in:
 

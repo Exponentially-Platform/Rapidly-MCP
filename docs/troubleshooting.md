@@ -4,7 +4,7 @@
 
 That is expected. `https://www.rapidly.co/mcp` is an MCP endpoint, not a web page. A normal browser request returns `204 No Content`.
 
-Use [rapidly.co/mcp-connect](https://www.rapidly.co/mcp-connect) for onboarding.
+Use [rapidly.co/rapidly-mcp](https://www.rapidly.co/rapidly-mcp) for onboarding.
 
 ## My client can't see Rapidly
 

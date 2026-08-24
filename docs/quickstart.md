@@ -10,7 +10,7 @@ Opening that address in a browser returns an empty response by design. Add it to
 
 ## New customer with a personal token
 
-Open [rapidly.co/mcp-connect](https://www.rapidly.co/mcp-connect). Enter your name, email and team name. Rapidly creates the account and team, then shows the token once.
+Open [rapidly.co/rapidly-mcp](https://www.rapidly.co/rapidly-mcp). Enter your name, email and team name. Rapidly creates the account and team, then shows the token once.
 
 Codex supports both connection paths. A new user can connect Codex CLI with the personal token below. OAuth is the tested route for the Codex app and is also available to Codex CLI.
 
@@ -34,7 +34,7 @@ The supplied setup registers Rapidly at user scope with an environment-backed Au
 
 ## OAuth connection
 
-Existing Rapidly team members can approve a named team through OAuth. The tested Codex app route also works for a new `/mcp-connect` account.
+Existing Rapidly team members can approve a named team through OAuth. The tested Codex app route also works for a new `/rapidly-mcp` account.
 
 ### Codex app
 
