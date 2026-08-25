@@ -1,144 +1,117 @@
 # Rapidly MCP
 
-## Make every AI idea earn the build
+## Test the idea before you build it
 
-AI can make almost any idea look convincing. The question hasn't changed: should you build it?
+Give Rapidly an idea you already have, or ask it to generate one for a company from its website. In five minutes, it will help you define what must be true, what a real customer must do, the pass mark and the smallest Pretotyping experiment worth running.
 
-Rapidly puts our idea-to-experiment method inside any agent that supports remote MCP. That includes Claude Code, Codex, ChatGPT, Hermes, OpenClaude, Grokbot and other MCP-capable agents. Bring a company, a problem or an idea. Rapidly helps your agent turn it into:
+At the end, you get a build prompt for the test asset. Your agent builds it. Real customers give you the evidence.
 
-1. a grounded idea;
-2. a Lean Canvas;
-3. a measurable customer behaviour and pass threshold;
-4. Pretotyping experiment options and a recommended first test;
-5. a build prompt for the test assets.
+Works with Claude, Codex, ChatGPT and Hermes. OpenClaw, Grokbot and other agents can also use Rapidly if they support remote MCP.
 
-From idea to an experiment ready to run in five minutes.
+[Connect Rapidly](https://www.rapidly.co/rapidly-mcp) · [Let your agent set it up](docs/for-agents.md) · [Manual setup](docs/quickstart.md)
 
-Rapidly designs the experiment. Your AI client or development tool builds the assets. Real customers give you the evidence.
+## Here's what a first run looks like
 
-[Connect Rapidly](https://www.rapidly.co/rapidly-mcp) · [Setup instructions](docs/quickstart.md) · [Example prompts](docs/examples.md)
+> A suburban independent bookshop wants to grow weekday foot traffic and build a younger, regular customer base.
 
-## One idea, one MCP call
+Rapidly generated three ideas. We chose the Third-Place Pass: a $19 monthly membership with a guaranteed two-hour weekday seat, a rotating perk and a members' shelf.
 
-> Ask Rapidly to test this idea: an AI interview-practice agent for job seekers with a real interview scheduled in the next 2 to 6 weeks.
+Rapidly built the Lean Canvas, turned the riskiest demand assumption into a measurable hypothesis and proposed five Pretotyping experiments. The simplest started with staff asking warm, local customers to pay. The next used a counter card and landing page, with a proposed pass mark of 15%.
 
-In a real Rapidly MCP run on 24 August 2026, Rapidly recommended a LinkedIn Fake Door that asks qualified job seekers to book a mock interview. It supplied the hypothesis, behaviour measure, proposed decision rule and build prompt. The AI agent then built only the requested customer-facing booking page.
+![The Third-Place Pass landing page built from Rapidly's recommended Fake Door experiment.](docs/assets/third-place-pass-landing.png)
 
-![Rapidly MCP interview-practice example showing the recommended Fake Door experiment and the customer-facing booking page.](docs/assets/interview-practice-example.png)
+[See the complete Rapidly run](https://www.exponentially.com/experiments/rapidly-mcp/) · [Open the customer-facing landing page](https://www.exponentially.com/experiments/rapidly-mcp/pretotypes/third-place-pass/)
 
-[See the complete interview-practice example](examples/interview-practice/) · [Open the booking-page source](examples/interview-practice/booking-page.html)
+This was a demonstration for a hypothetical bookshop. The pass mark was a proposal to test, not a measured result. No customer results are claimed.
 
-This is an example, not a live offer. The target is a proposal for review, not a measured result. No customer bookings were collected.
+## Why can't I just ask Claude or Codex?
 
-## Why can't I just ask AI?
+You can. We do. The answer will probably look reasonable.
 
-You can, and the answer will probably look reasonable. Two things will be missing.
+Rapidly is useful because the method is already there. For one idea, the core run:
 
-**The discipline.** A one-off prompt rarely pins down what a real customer must do before the conversation slides into implementation. Rapidly keeps the work on the customer, risky belief, observable behaviour, pass threshold and smallest useful test.
+1. builds a full Lean Canvas with `independent_design_lean_canvas`;
+2. turns the riskiest assumption into a market engagement hypothesis and researches the pass threshold with `independent_design_hypothesis`;
+3. creates three to five named Pretotyping experiments, recommends the smallest useful one and returns its build prompt with `independent_design_experiments`.
 
-**The memory.** A chat answer dies in the thread. Rapidly saves successful work to the team you authorise and keeps each experiment under the idea it tests. Your team can use the evidence to fund, fix, stop or test next.
+[See all 21 Rapidly tools and what they do](docs/tools.md).
 
-The method is Alberto Savoia's Pretotyping plus our own practice through [4,000+ experiments with client teams](https://www.exponentially.com/) and 200+ workshops. The agent still builds. Rapidly helps you decide what deserves the build.
+Successful work is also saved with the idea in your Rapidly team instead of disappearing in a chat thread. You can bring the result back later and decide whether to fund it, fix it, stop it or run another test.
 
-## Connect
+The method combines Alberto Savoia's Pretotyping with our own practice through [4,000+ experiments with client teams](https://www.exponentially.com/) and 200+ workshops.
 
-MCP is the open standard that lets your AI client call hosted tools. Rapidly runs the server, so there is no server code to install.
+## Connect Rapidly
 
-Rapidly uses one address:
+### If you're new to Rapidly
+
+Open [rapidly.co/rapidly-mcp](https://www.rapidly.co/rapidly-mcp) and enter your name, email and team name. Rapidly creates the account and team, then shows your personal token once.
+
+The page gives you copy-ready setup for Codex CLI and Claude Code. Follow the steps, start a fresh conversation and you're ready to try an idea.
+
+### If you already use Rapidly
+
+Connect with OAuth, choose your Rapidly team and approve access. You don't need to create another account or personal token.
+
+The exact steps differ between Codex, Claude and ChatGPT. Use the [setup instructions](docs/quickstart.md) for your agent.
+
+### If you're using another agent
+
+Give your agent this address and ask it to connect Rapidly:
 
 ```text
 https://www.rapidly.co/mcp
 ```
 
-### New to Rapidly
+Use OAuth if the agent supports it. Otherwise, follow the [agent setup instructions](docs/for-agents.md) to keep your personal token out of chat and project files.
 
-Open [rapidly.co/rapidly-mcp](https://www.rapidly.co/rapidly-mcp). Enter your name, email and team name. Rapidly creates the account and team, then shows a personal token once.
+## Start with an idea
 
-The page has tested, copy-ready setup for:
-
-- Codex CLI using the personal token;
-- Claude Code using the personal token.
-
-### OAuth
-
-Existing Rapidly team members use OAuth. The tested Codex app route works for either a new `/rapidly-mcp` account or an existing Rapidly team.
-
-OAuth is available in:
-
-- Codex app;
-- Codex CLI;
-- Claude Code;
-- Claude custom connectors, with setup documented but not included in the recorded Rapidly production smoke;
-- ChatGPT custom MCP apps on eligible plans.
-
-Other agents can connect when they support a remote HTTPS MCP server plus OAuth or a secure Authorization header. You can ask Hermes, OpenClaude, Grokbot or another MCP-capable agent to add Rapidly using `https://www.rapidly.co/mcp`.
-
-Choose the intended Rapidly team and approve access when the client asks. The client instructions differ, so use the exact steps in the [Setup instructions](docs/quickstart.md).
-
-## Run the test
-
-### Generate an idea
-
-Start with a company or type of business:
-
-```text
-Ask Rapidly for one business idea for an independent bookstore.
-```
-
-Rapidly generates one grounded idea with cited public sources, then offers the next method step.
-
-### Test an idea you already have
+Use one you already have:
 
 ```text
 Ask Rapidly to test this idea: [describe the customer, problem and proposed change].
 ```
 
-Include what you already know, the source of that information and any constraints that matter.
+Or ask Rapidly to generate one from a company and its website:
 
-After each result, accept the next Rapidly step. This can be as simple as replying `yes`. If the client doesn't offer it, ask Rapidly to continue the same idea through its Lean Canvas, hypothesis and experiment stages.
+```text
+Ask Rapidly to generate [one or more] ideas for [company name] using [website URL]. Focus on [optional customer, problem or opportunity].
+```
 
-A useful result contains:
+Rapidly researches the company, returns grounded ideas with sources and offers to take one through the method. If you're bringing your own idea, add anything you already know, where that information came from and any constraints that matter.
 
-- the same idea carried through each stage;
+Rapidly works through the method one stage at a time. After each result, accept the next step. This can be as simple as replying `yes`. If your agent doesn't offer it, ask Rapidly to continue the same idea.
+
+By the end, you should have:
+
 - sources you can open and facts you can review;
-- a measurable customer behaviour and proposed pass threshold;
-- Pretotyping options, GO and NO-GO rules, and a recommended smallest experiment;
-- a build prompt for the test assets, not a claim that Rapidly built them;
-- saved work under the authorised team when your connection has team access.
+- a full Lean Canvas;
+- a market engagement hypothesis with a measurable customer behaviour and proposed pass threshold;
+- three to five Pretotyping options, GO and NO-GO rules, and a recommended first experiment;
+- a build prompt for the test asset.
 
-See [Example prompts](docs/examples.md) for both starting paths.
+Review the output, ask your agent to build the asset, then put the test in front of real customers.
 
-## After the first test
+[See more example prompts](docs/examples.md)
 
-Successful work saves to your authorised Rapidly team. The experiment stays under the idea it tested, with the result and lesson.
+## Help us improve the beta
 
-Bring the next idea, then the next. Team tools can review the portfolio, show experiment coverage and prepare a sprint pack around the focus idea.
+We're looking for the points where this becomes confusing or stops being useful.
 
-One test answers one question. The portfolio helps the team decide where the next sprint should go.
+After your run, please tell us:
 
-## Beta testing
+- Did the connection work the first time?
+- Where did you hesitate or get stuck?
+- Was the proposed experiment small enough to run?
+- What did you keep, and did it change what you planned to do next?
 
-Please use a real, non-confidential idea unless your organisation has approved sending the information through your AI client and Rapidly.
+Email [hello@rapidly.co](mailto:hello@rapidly.co) with the subject `Rapidly MCP beta feedback`. Tell us which agent you used and where you stopped. We won't share your idea, feedback or results publicly without asking you first. Please remove tokens and customer data from feedback, logs and screenshots.
 
-We want to know:
+## During the beta
 
-- Did the connection work on the first attempt?
-- Did Rapidly understand the customer and problem?
-- Did idea generation return something relevant and properly sourced?
-- Was the hypothesis measurable?
-- Was the recommended experiment small enough to run?
-- Was the build prompt good enough to use?
-- What was confusing, wrong or missing?
-
-Email [hello@rapidly.co](mailto:hello@rapidly.co) with the subject `Rapidly MCP beta feedback`. Include the client and version, connection type, where you stopped and a redacted description of the result. Remove tokens, customer data and confidential details from all feedback, logs and screenshots.
-
-## Current limits
-
-- A trial includes five ideas per account.
-- Continuing the same idea through its Canvas, hypothesis and experiments doesn't use another idea.
-- Starting a new idea or branching one does.
+- A trial includes five new ideas. Taking one idea through its Canvas, hypothesis and experiments still counts as one idea.
+- Need more? Email [hello@rapidly.co](mailto:hello@rapidly.co). We can reset or increase the limit during testing because we want to learn where Rapidly is useful.
 - Generated facts, cited sources and proposed targets need human review before use.
-- The live `tools/list` response is the authority for the tools available to your connection.
 
 ## Guides
 
@@ -148,9 +121,3 @@ Email [hello@rapidly.co](mailto:hello@rapidly.co) with the subject `Rapidly MCP 
 - [Security and privacy](docs/security-and-privacy.md)
 - [Support](SUPPORT.md)
 - [Security reports](SECURITY.md)
-
-## Repository scope
-
-This repository documents Rapidly's hosted MCP service. It does not contain the production server source code.
-
-The [MIT licence](LICENSE.md) covers the files in this repository. The hosted service, Rapidly application source, method implementation, and Rapidly and Exponentially names and marks remain proprietary to Exponential Innovation Pty Ltd.

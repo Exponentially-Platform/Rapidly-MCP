@@ -2,21 +2,13 @@
 
 You can start by asking Rapidly to generate an idea or by giving it an idea you already have.
 
-## Generate one idea
+## Generate one or more ideas
 
 ```text
-Ask Rapidly for one business idea for an independent bookstore.
+Ask Rapidly to generate [one or more] ideas for [company name] using [website URL]. Focus on [optional customer, problem or opportunity].
 ```
 
-Rapidly should return one grounded idea with cited public sources and offer the next method step.
-
-To explore several alternatives instead:
-
-```text
-Ask Rapidly for three business ideas for an independent bookstore. Keep the customer and business context clear, explain why each idea fits and cite the public sources used.
-```
-
-Request several ideas only when you want alternatives. Each new idea uses one idea allowance.
+Including the company website gives Rapidly a clear place to start its research. It should return the number of grounded ideas you asked for, with cited public sources, and offer the next method step. Ask for more than one only when you want alternatives. A trial includes five new ideas.
 
 ## Test an idea you already have
 
@@ -34,25 +26,25 @@ Rapidly should preserve that customer, problem and proposed change rather than r
 
 ## Continue the same idea
 
-After each result, accept the next Rapidly method when the client offers it. This can be as simple as replying:
+After each result, accept the next Rapidly method when the agent offers it. This can be as simple as replying:
 
 ```text
 yes
 ```
 
-If the client doesn't offer the next step, ask:
+If the agent doesn't offer the next step, ask:
 
 ```text
 Continue this same Rapidly idea to the next stage. Do not create a new idea.
 ```
 
-Repeat after the Lean Canvas and hypothesis. The final experiment stage should return Pretotyping options, a recommended first test, GO and NO-GO rules, and a build prompt for the test assets.
+Repeat after the Lean Canvas and hypothesis. The final experiment stage should return three to five Pretotyping options, a recommended first test, GO and NO-GO rules, and a build prompt for the test asset.
 
-Continuing the same idea doesn't use another idea allowance.
+The Canvas, hypothesis and experiment stages are all part of the same idea. They don't each count as a new idea.
 
 ## Build the test asset
 
-Copy the final build prompt into the AI client or development tool you want to use for the asset.
+Copy the final build prompt into the agent or development tool you want to use for the asset.
 
 Rapidly designs the experiment and build prompt. The other agent builds the asset. Review the asset before showing it to customers.
 
@@ -64,7 +56,7 @@ If your connection includes the team tools:
 Use Rapidly to show the authorised team's idea portfolio, include experiment coverage and prepare a sprint pack around the current focus idea.
 ```
 
-The live `tools/list` response determines which team, read and write tools are available to the connection.
+Team tools depend on the access approved when connecting. See [what Rapidly can do](tools.md).
 
 ## Check every generated claim
 

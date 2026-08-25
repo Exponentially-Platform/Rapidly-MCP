@@ -1,12 +1,12 @@
 # Rapidly MCP setup
 
-Rapidly uses one hosted server address:
+Add Rapidly to your agent with this MCP address:
 
 ```text
 https://www.rapidly.co/mcp
 ```
 
-Opening that address in a browser returns an empty response by design. Add it to your MCP client using one of the paths below.
+Opening that address in a browser returns an empty response by design. Follow the path for your agent below.
 
 ## New customer with a personal token
 
@@ -65,29 +65,29 @@ Start Claude Code and run `/mcp`. Select Rapidly, complete the OAuth sign-in, ch
 
 ### Claude custom connector
 
-For Claude Free, Pro or Max:
+For Claude Pro or Max:
 
-1. Open **Customize > Connectors > + > Add custom connector**.
-2. Name it `Rapidly` and enter `https://www.rapidly.co/mcp`.
-3. Select **Add**, then **Connect**.
-4. Choose the intended Rapidly team and select **Allow access**.
-5. In a new conversation, choose **+ > Connectors** and enable Rapidly.
+1. Open **Settings > Connectors**.
+2. Select **Add custom connector**.
+3. Name it `Rapidly`, enter `https://www.rapidly.co/mcp` and select **Add**.
+4. Select **Connect**, choose the intended Rapidly team and select **Allow access**.
+5. In a new conversation, open **Search and tools** and enable Rapidly.
 
-Free users can add one custom connector. For Claude Team or Enterprise, an owner first adds the custom web connector in the organisation settings. Each member then connects it from **Customize > Connectors**.
+For Claude Team or Enterprise, an owner first adds Rapidly under **Settings > Connectors > Organization connectors**. Each member then connects it from the same page.
 
 This setup is documented, but the recorded Rapidly production smoke covered Claude Code rather than the hosted Claude connector.
 
 ### ChatGPT
 
-Full MCP write support requires an eligible ChatGPT Business, Enterprise or Edu workspace and depends on administrator policy.
+Full MCP write support requires an eligible ChatGPT Business, Enterprise or Edu workspace and depends on workspace policy.
 
-1. A workspace admin enables Developer mode for custom MCP apps.
+1. An admin or authorised workspace user enables Developer mode for custom MCP apps.
 2. Open **Workspace settings > Apps > Create**.
 3. Add Rapidly with `https://www.rapidly.co/mcp` and choose OAuth.
 4. Select **Scan Tools**, approve the intended Rapidly team and create the draft app.
 5. Start a new chat and select the Rapidly draft app from the tools menu.
 
-### Hermes, OpenClaude, Grokbot and other agents
+### Hermes, OpenClaw, Grokbot and other agents
 
 Any agent that supports a remote HTTPS MCP server can use Rapidly when it also supports OAuth or a secure Authorization header.
 
@@ -100,12 +100,14 @@ Use OAuth if you support it. Otherwise, show me how to configure my Rapidly pers
 
 The agent should explain where it stores the connection and credential before making the change. Never paste a personal token into a chat message. After connecting, start a fresh conversation and use the check below.
 
+You can also point the agent at the shorter [agent setup page](for-agents.md).
+
 ## Check the connection
 
 Start a fresh conversation and ask:
 
 ```text
-Ask Rapidly for one business idea for an independent bookstore.
+Ask Rapidly to generate one idea for [company name] using [website URL]. Focus on [optional customer, problem or opportunity].
 ```
 
 A working connection should return one idea with sources and offer the next Rapidly step.

@@ -6,13 +6,13 @@ That is expected. `https://www.rapidly.co/mcp` is an MCP endpoint, not a web pag
 
 Use [rapidly.co/rapidly-mcp](https://www.rapidly.co/rapidly-mcp) for onboarding.
 
-## My client can't see Rapidly
+## My agent can't see Rapidly
 
 1. Confirm the server address is exactly `https://www.rapidly.co/mcp`.
 2. Start a new conversation after connecting.
-3. Quit and reopen the client if its connection list hasn't refreshed.
+3. Quit and reopen the agent if its connection list hasn't refreshed.
 4. For OAuth, reconnect and approve the intended Rapidly team.
-5. For a personal token, launch the client from the terminal configured by the copy-ready setup.
+5. For a personal token, launch the agent from the terminal configured by the copy-ready setup.
 
 ## I lost the personal token
 
@@ -28,17 +28,17 @@ Start an interactive Claude Code session, run `/mcp`, select Rapidly and complet
 
 ## The continuation created another idea
 
-Ask the client:
+Ask the agent:
 
 ```text
 Continue the same Rapidly idea. Do not create or branch a new idea.
 ```
 
-If it still creates a new idea, report the client, version and exact stage. Don't expose the private continuation value.
+If it still creates a new idea, report the agent, version and exact stage. Don't expose the private continuation value.
 
 ## I have used all five trial ideas
 
-Continue one of the existing ideas through its Canvas, hypothesis and experiments. Continuing doesn't use another allowance. A new idea or branch does.
+The five-idea trial counts new ideas. The Canvas, hypothesis and experiment stages for an existing idea don't each count again. For more ideas during beta testing, email [hello@rapidly.co](mailto:hello@rapidly.co).
 
 ## Contact support
 

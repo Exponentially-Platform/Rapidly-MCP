@@ -10,7 +10,7 @@ Before writing, check:
 
 For technical problems, include:
 
-- AI client and version;
+- AI agent and version;
 - operating system;
 - connection type, OAuth or personal token;
 - approximate time and timezone;

@@ -1,11 +1,6 @@
 # AI interview-practice agent
 
-This is a real Rapidly MCP example from 24 August 2026. It shows the shortest useful customer path:
-
-1. Ask Rapidly to test a focused product idea.
-2. The agent calls Rapidly MCP.
-3. Rapidly recommends the smallest useful experiment and supplies the asset build prompt.
-4. The agent builds only that customer-facing asset.
+This is a real Rapidly MCP output from 24 August 2026. It shows the recommended experiment, decision rule and customer-facing asset. No customer test was run.
 
 ## Idea given to Rapidly
 
@@ -17,7 +12,7 @@ This is a real Rapidly MCP example from 24 August 2026. It shows the shortest us
 
 **Type:** Fake Door
 
-**Hypothesis:** Job seekers with interviews in the next 2 to 6 weeks will take immediate action to get an AI-led mock interview that gives mistake detection and targeted drills. A simple post plus scheduler flow can validate demand without building the product.
+**Hypothesis:** Job seekers with interviews in the next 2 to 6 weeks will take immediate action to get an AI-led mock interview that gives mistake detection and targeted drills. A simple post plus scheduler flow can test demand without building the product.
 
 **Success measure:**
 
@@ -43,10 +38,10 @@ The page follows Rapidly's build prompt:
 - required booking fields and qualification checkbox;
 - inline validation and an on-page confirmation state.
 
-## What this example proves
+## What happened here
 
-The AI agent did not invent a testing framework or build the proposed product. Rapidly chose the experiment and defined the evidence. The agent built only the asset Rapidly requested.
+Rapidly chose the experiment and defined the behaviour and proposed pass mark. The agent built only the booking form Rapidly requested.
 
-This is an example, not a live offer. The threshold is Rapidly's proposed decision rule, not a measured result. No customer bookings were collected.
+The threshold is a proposal for review, not a measured result. No customer bookings were collected, so this is a designed experiment, not validation.
 
 To run the experiment, upload `booking-page.html` to simple static hosting and use its URL in the LinkedIn post or direct messages. Record the numerator and denominator in Rapidly for calculation, interpretation and the GO/NO-GO decision.

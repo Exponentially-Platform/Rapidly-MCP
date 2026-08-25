@@ -17,9 +17,9 @@ Rapidly checks the credential, current team membership, granted scopes and tool 
 
 ## Information sent through the connection
 
-A tool call can contain the idea, customer context, Canvas, hypothesis, experiment content and any other information given to the AI client. Some grounded tools can also use public web search.
+A tool call can contain the idea, customer context, Canvas, hypothesis, experiment content and any other information given to the AI agent. Some grounded tools can also use public web search.
 
-Use a non-confidential idea unless your organisation has approved sending that information through its AI client and Rapidly.
+Use a non-confidential idea unless your organisation has approved sending that information through its AI agent and Rapidly.
 
 ## Generated content
 
