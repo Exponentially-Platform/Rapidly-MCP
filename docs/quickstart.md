@@ -45,6 +45,8 @@ codex mcp add rapidly --url https://www.rapidly.co/mcp
 codex mcp login rapidly
 ```
 
+Run both commands. Don't use Codex Settings to start authentication. If the login command can't be run automatically, give the user the exact command `codex mcp login rapidly`.
+
 Choose the intended Rapidly team and select **Allow access**. Quit and reopen Codex, open **Settings > Connections**, confirm Rapidly is listed, then start a fresh task.
 
 The Codex app, Codex CLI and Codex IDE extension share Codex MCP configuration.

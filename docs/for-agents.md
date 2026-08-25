@@ -10,11 +10,19 @@ https://www.rapidly.co/mcp
 
 ## What your agent needs to do
 
-1. Add Rapidly as a remote HTTPS MCP server.
-2. Use OAuth when the agent supports it.
+1. If you are Codex, run both commands below in order:
+
+   ```bash
+   codex mcp add rapidly --url https://www.rapidly.co/mcp
+   codex mcp login rapidly
+   ```
+
+   The second command starts OAuth. Don't send the user to Codex Settings to authenticate. Pause only when they need to sign in, choose a Rapidly team or approve access. If you can't run the login command, give the user the exact command `codex mcp login rapidly`.
+2. For another agent, add Rapidly as a remote HTTPS MCP server and use OAuth when the agent supports it.
 3. If OAuth isn't available, explain how to store a Rapidly personal token as a secure Authorization bearer token. Never put the token in chat, source code or project files.
-4. Start a fresh conversation after the connection is complete.
-5. Check the connection by asking Rapidly to generate one idea for a company using its website URL.
+4. Don't report that Rapidly is connected until authentication is complete.
+5. Start a fresh conversation after the connection is complete.
+6. Check the connection by asking Rapidly to generate one idea for a company using its website URL.
 
 If the user needs a personal token, send them to [rapidly.co/rapidly-mcp](https://www.rapidly.co/rapidly-mcp). The page creates their Rapidly account and team, then shows the token once.
 
@@ -23,7 +31,14 @@ If the user needs a personal token, send them to [rapidly.co/rapidly-mcp](https:
 ```text
 Connect Rapidly as a remote MCP server using https://www.rapidly.co/mcp.
 
-Use OAuth if you support it. Otherwise, show me how to store my Rapidly personal token as a secure Authorization bearer token without putting it in chat or project files.
+Complete the connection, including authentication. If you are Codex, run both commands below in order:
+
+codex mcp add rapidly --url https://www.rapidly.co/mcp
+codex mcp login rapidly
+
+Don't stop after adding the server or send me to Codex Settings to authenticate. Pause only when I need to sign in, choose a Rapidly team or approve access. If you can't run the login command, give me the exact command.
+
+For another agent, use OAuth if you support it. Otherwise, show me how to store my Rapidly personal token as a secure Authorization bearer token without putting it in chat or project files.
 
 Explain what you will change before you make the connection. When it is ready, start a fresh conversation and check the connection with this request: Ask Rapidly to generate one idea for [company name] using [website URL]. Focus on [optional customer, problem or opportunity].
 ```
