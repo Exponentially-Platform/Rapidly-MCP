@@ -38,7 +38,7 @@ If it still creates a new idea, report the agent, version and exact stage. Don't
 
 ## I have used all five trial ideas
 
-The five-idea trial counts new ideas. The Canvas, hypothesis and experiment stages for an existing idea don't each count again. For more ideas during beta testing, email [hello@rapidly.co](mailto:hello@rapidly.co).
+The five-idea trial counts new ideas. The Canvas, hypothesis and experiment stages for an existing idea don't each count again. For more ideas, email [hello@rapidly.co](mailto:hello@rapidly.co) to discuss the right next step for your team.
 
 ## Contact support
 

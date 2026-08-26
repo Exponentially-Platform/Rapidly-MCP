@@ -2,9 +2,9 @@
 
 ## Test the idea before you build it
 
-Give Rapidly an idea you already have, or ask it to generate one for a company from its website. In five minutes, it will help you define what must be true, what a real customer must do, the pass mark and the smallest Pretotyping experiment worth running.
+Rapidly works inside your AI agent. Bring an idea you already have, or ask it to generate one from a company website. In about five minutes, you get a build prompt for the smallest Pretotyping experiment worth running.
 
-At the end, you get a build prompt for the test asset. Your agent builds it. Real customers give you the evidence.
+Rapidly builds the Lean Canvas, turns the riskiest assumption into a measurable hypothesis, researches a pass mark and designs practical experiments. Your agent builds the test. Real customers give you the evidence.
 
 Works with Claude, Codex, ChatGPT and Hermes. OpenClaw, Grokbot and other agents can also use Rapidly if they support remote MCP.
 
@@ -94,7 +94,7 @@ Review the output, ask your agent to build the asset, then put the test in front
 
 [See more example prompts](docs/examples.md)
 
-## Help us improve the beta
+## Help us improve Rapidly MCP
 
 We're looking for the points where this becomes confusing or stops being useful.
 
@@ -105,12 +105,12 @@ After your run, please tell us:
 - Was the proposed experiment small enough to run?
 - What did you keep, and did it change what you planned to do next?
 
-Email [hello@rapidly.co](mailto:hello@rapidly.co) with the subject `Rapidly MCP beta feedback`. Tell us which agent you used and where you stopped. We won't share your idea, feedback or results publicly without asking you first. Please remove tokens and customer data from feedback, logs and screenshots.
+Email [hello@rapidly.co](mailto:hello@rapidly.co) with the subject `Rapidly MCP feedback`. Tell us which agent you used and where you stopped. We won't share your idea, feedback or results publicly without asking you first. Please remove tokens and customer data from feedback, logs and screenshots.
 
-## During the beta
+## Current limits
 
 - A trial includes five new ideas. Taking one idea through its Canvas, hypothesis and experiments still counts as one idea.
-- Need more? Email [hello@rapidly.co](mailto:hello@rapidly.co). We can reset or increase the limit during testing because we want to learn where Rapidly is useful.
+- Need more? Email [hello@rapidly.co](mailto:hello@rapidly.co) to discuss the right next step for your team.
 - Generated facts, cited sources and proposed targets need human review before use.
 
 ## Guides

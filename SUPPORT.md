@@ -1,6 +1,6 @@
 # Support
 
-For setup help, account questions or beta feedback, email [hello@rapidly.co](mailto:hello@rapidly.co).
+For setup help, account questions or product feedback, email [hello@rapidly.co](mailto:hello@rapidly.co).
 
 Before writing, check:
 
