@@ -8,7 +8,7 @@ Rapidly builds the Lean Canvas, turns the riskiest assumption into a measurable 
 
 Works with Claude, Codex, ChatGPT and Hermes. OpenClaw, Grokbot and other agents can also use Rapidly if they support remote MCP.
 
-[Connect Rapidly](https://www.rapidly.co/rapidly-mcp) · [Install the Agent Plugin](docs/agent-plugin.md) · [Let your agent set it up](docs/for-agents.md) · [Manual setup](docs/quickstart.md)
+[Connect Rapidly](https://www.rapidly.co/rapidly-mcp) · [Let your agent set it up](docs/for-agents.md) · [Manual setup](docs/quickstart.md)
 
 ## Here's what a first run looks like
 
@@ -41,25 +41,6 @@ Successful work is also saved with the idea in your Rapidly team instead of disa
 The method combines Alberto Savoia's Pretotyping with our own practice through [4,000+ experiments with client teams](https://www.exponentially.com/) and 200+ workshops.
 
 ## Connect Rapidly
-
-### Install the Agent Plugin
-
-This repository is an Agent Plugins 1.0 package. Supported agents can install it to get the Rapidly MCP connection and the `rapidly-test-before-build` workflow together.
-
-In VS Code, run **Chat: Install Plugin From Source** and enter:
-
-```text
-https://github.com/Exponentially-Platform/Rapidly-MCP
-```
-
-[See Agent Plugin setup for VS Code, GitHub Copilot, Cursor and Codex](docs/agent-plugin.md).
-
-Codex users can install it from the repository:
-
-```bash
-codex plugin marketplace add Exponentially-Platform/Rapidly-MCP
-codex plugin add rapidly@rapidly-mcp
-```
 
 ### If you're new to Rapidly
 
@@ -135,7 +116,6 @@ Email [hello@rapidly.co](mailto:hello@rapidly.co) with the subject `Rapidly MCP 
 ## Guides
 
 - [Setup instructions](docs/quickstart.md)
-- [Agent Plugin installation](docs/agent-plugin.md)
 - [Example prompts](docs/examples.md)
 - [Troubleshooting](docs/troubleshooting.md)
 - [Security and privacy](docs/security-and-privacy.md)
