@@ -1,0 +1,43 @@
+{
+  "name": "rapidly",
+  "version": "1.0.0",
+  "description": "Test the idea before you build it. Rapidly works inside your AI agent.",
+  "author": {
+    "name": "Rapidly",
+    "email": "hello@rapidly.co",
+    "url": "https://www.rapidly.co"
+  },
+  "homepage": "https://www.rapidly.co/rapidly-mcp",
+  "repository": "https://github.com/Exponentially-Platform/Rapidly-MCP",
+  "license": "MIT",
+  "keywords": [
+    "idea-validation",
+    "pretotyping",
+    "experimentation",
+    "lean-canvas",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Rapidly",
+    "shortDescription": "Test the idea before you build it.",
+    "longDescription": "Rapidly turns an idea into the smallest Pretotyping experiment worth running, then gives your agent the prompt to build the test.",
+    "developerName": "Rapidly",
+    "category": "Business & Operations",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://www.rapidly.co/rapidly-mcp",
+    "privacyPolicyURL": "https://www.rapidly.co/privacy",
+    "termsOfServiceURL": "https://www.rapidly.co/terms",
+    "defaultPrompt": [
+      "Ask Rapidly to generate three ideas for a mobile coffee cart.",
+      "Ask Rapidly to test this idea before I build it: [describe the idea].",
+      "Continue this same Rapidly idea to the next stage."
+    ],
+    "brandColor": "#D63B34"
+  }
+}
