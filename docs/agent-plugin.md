@@ -25,7 +25,14 @@ Reload Cursor, open **Customize** and confirm the Rapidly skill and MCP server a
 
 ## Codex and ChatGPT
 
-The repository includes the Codex plugin manifest and MCP connection. Public directory installation will be added after the package passes OpenAI review. Until then, use the existing [Codex MCP setup](quickstart.md#codex-app).
+Add the Rapidly repository as a Codex plugin source, then install Rapidly:
+
+```bash
+codex plugin marketplace add Exponentially-Platform/Rapidly-MCP
+codex plugin add rapidly@rapidly-mcp
+```
+
+Restart ChatGPT or Codex after installation. Complete the Rapidly OAuth connection when prompted. Public directory installation will be added after the package passes OpenAI review.
 
 ## Try it
 

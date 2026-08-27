@@ -54,6 +54,13 @@ https://github.com/Exponentially-Platform/Rapidly-MCP
 
 [See Agent Plugin setup for VS Code, GitHub Copilot, Cursor and Codex](docs/agent-plugin.md).
 
+Codex users can install it from the repository:
+
+```bash
+codex plugin marketplace add Exponentially-Platform/Rapidly-MCP
+codex plugin add rapidly@rapidly-mcp
+```
+
 ### If you're new to Rapidly
 
 Open [rapidly.co/rapidly-mcp](https://www.rapidly.co/rapidly-mcp) and enter your name, email and team name. Rapidly creates the account and team, then shows your personal token once.
