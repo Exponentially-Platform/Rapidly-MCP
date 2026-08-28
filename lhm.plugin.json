@@ -1,0 +1,18 @@
+{
+  "author": "Rapidly",
+  "authorUrl": "https://www.rapidly.co",
+  "category": "productivity",
+  "cloudEndpoint": "https://www.rapidly.co/mcp",
+  "description": "Test ideas before building. Rapidly turns an idea into a Lean Canvas, measurable hypothesis, pass mark, and the smallest Pretotyping experiment worth running.",
+  "homepage": "https://www.rapidly.co/rapidly-mcp",
+  "icon": "https://www.rapidly.co/wp-content/themes/exponentially/assets/images/favicon-32.png",
+  "identifier": "rapidly",
+  "name": "Rapidly",
+  "tags": [
+    "pretotyping",
+    "experimentation",
+    "idea-validation",
+    "productivity"
+  ],
+  "version": "1.0.1"
+}
