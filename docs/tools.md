@@ -2,54 +2,32 @@
 
 You normally ask for the outcome in plain English. Your agent chooses the Rapidly tools needed to do the work.
 
-## Take one idea through the method
+## Standard catalogue
 
-These are the main tools for a new idea:
-
-| Tool | What it does |
-|---|---|
-| `independent_generate_ideas` | Generates grounded ideas from a company, problem or brief, cites the public sources used and saves the result to your Rapidly team. |
-| `independent_design_lean_canvas` | Builds a complete Lean Canvas while preserving the original customer, problem and proposition. |
-| `independent_design_hypothesis` | Turns the riskiest assumption into a market engagement hypothesis, then researches a measurable pass threshold. |
-| `independent_design_experiments` | Creates three to five named Pretotyping experiments, recommends the smallest useful one and returns a build prompt for its test asset. |
-
-If you already have an idea, start with `independent_design_lean_canvas`. If you want Rapidly to generate the idea, start with `independent_generate_ideas`.
-
-## Work with ideas and evidence already in Rapidly
+The normal Rapidly connection provides seven tools:
 
 | Tool | What it does |
 |---|---|
-| `design_hypothesis` | Designs a hypothesis and researched target from a saved idea or raw idea text. |
-| `design_experiments` | Designs three to five Pretotyping options for a saved idea. |
-| `interpret_results` | Turns recorded experiment evidence into an executive summary. |
-| `evaluate_idea` | Summarises the evidence and recommends what to do next. |
-| `score_portfolio` | Orders the team's ideas by stored value and effort, with confidence and experiment counts. |
-| `get_sprint_pack` | Combines the ranked portfolio, team knowledge, focus idea, hypothesis and fresh experiment designs. |
+| `test_idea` | Saves or resumes one idea, then builds its Canvas, measurable hypothesis, three to five saved experiment options, recommendation and one build prompt. |
+| `find_ideas` | Generates and saves the requested number of ideas from a company, problem or open brief. |
+| `list_ideas` | Lists ideas in the Rapidly team authorised by the connection. |
+| `get_idea` | Returns one saved idea with its Canvas, hypothesis, experiment options, prompt, evidence and decisions. |
+| `record_test_result` | Appends real observations and numbers to an experiment, or records a correction without overwriting history. |
+| `decide_idea` | Interprets the current evidence and saves a traceable continue, change or stop recommendation. It doesn't change the idea's lifecycle automatically. |
+| `choose_next_idea` | Compares saved ideas and shows scores, evidence gaps, uncertainty and rationale for every candidate considered. |
 
-## Read the team's work
+For a complete first run, ask Rapidly to test the idea. Your agent should repeat `test_idea` with the saved project while the result says `in_progress`. Completed work is saved at every stage, so a safe retry resumes from the first missing stage without creating another idea or charge.
 
-| Tool | What it does |
-|---|---|
-| `list_ideas` | Lists the team's idea portfolio. |
-| `get_idea` | Opens one idea and its current method work. |
-| `list_experiments` | Lists an idea's experiments, outcomes and lessons. |
-| `get_team_knowledge` | Reads the company context and lessons saved by the team. |
+## Advanced method catalogue
 
-## Create and update Rapidly records
+Connect to `https://www.rapidly.co/mcp/?catalog=advanced` only when you need direct control of a method stage. It includes the seven standard tools plus:
 
 | Tool | What it does |
 |---|---|
-| `save_idea` | Updates selected fields on an existing idea. |
-| `expand_idea` | Stages proposed Canvas, hypothesis and experiment work for review. |
-| `save_experiment` | Saves a new experiment with the idea it tests. |
-| `save_team_knowledge` | Adds useful company context or a lesson to team knowledge. |
-| `create_idea_bundle` | Creates an idea together with optional Canvas, hypothesis and experiment records. |
+| `design_lean_canvas` | Creates or revises a complete Lean Canvas on one saved idea. |
+| `design_hypothesis` | Creates or revises the measurable hypothesis on the same saved idea. |
+| `design_experiments` | Saves every useful experiment option, identifies the recommended first experiment and generates its build prompt. |
 
-## Other idea-generation paths
-
-| Tool | What it does |
-|---|---|
-| `generate_ideas` | Generates grounded, de-duplicated ideas inside an existing Rapidly team portfolio. |
-| `validate_idea` | Produces a quick Canvas, hypotheses and suggested first experiment without public-source grounding. |
+Backend idea, experiment, bundle and team-knowledge editing functions still support Rapidly's web product and trusted server workflow. They are not exposed as MCP tools.
 
 The tools available to an agent depend on the team and access you approve when connecting. Rapidly checks that access on every request.

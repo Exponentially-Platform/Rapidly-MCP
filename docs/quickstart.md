@@ -109,7 +109,7 @@ You can also point the agent at the shorter [agent setup page](for-agents.md).
 Start a fresh conversation and ask:
 
 ```text
-Ask Rapidly to generate one idea for [company name] using [website URL]. Focus on [optional customer, problem or opportunity].
+Ask Rapidly to find one idea for [company name] using [website URL]. Focus on [optional customer, problem or opportunity].
 ```
 
 A working connection should return one idea with sources and offer the next Rapidly step.
@@ -121,3 +121,5 @@ Ask Rapidly to test this idea: [customer, problem and proposed change].
 ```
 
 See [Example prompts](examples.md) for the complete first run.
+
+If you need direct control of the Canvas, hypothesis or experiment stage, add a second connection using `https://www.rapidly.co/mcp/?catalog=advanced`. The normal connection is simpler for most work.

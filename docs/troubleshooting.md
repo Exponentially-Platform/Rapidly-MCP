@@ -26,15 +26,15 @@ The token-page route is designed for Codex CLI launched from the configured term
 
 Start an interactive Claude Code session, run `/mcp`, select Rapidly and complete the authentication flow. Current Claude Code handles remote-server OAuth from the `/mcp` panel rather than a shell login subcommand.
 
-## The continuation created another idea
+## The run stopped before the build prompt
 
 Ask the agent:
 
 ```text
-Continue the same Rapidly idea. Do not create or branch a new idea.
+Continue the Rapidly idea at [project link or project ID]. Do not create a new idea.
 ```
 
-If it still creates a new idea, report the agent, version and exact stage. Don't expose the private continuation value.
+Use the project link or ID from Rapidly's last receipt. Rapidly saves each completed stage, and a retry should resume from the first missing stage without another project, experiment set or idea charge. If it doesn't, report the agent, version, project link and last completed stage. Don't expose tokens or private continuation data.
 
 ## I have used all five trial ideas
 
