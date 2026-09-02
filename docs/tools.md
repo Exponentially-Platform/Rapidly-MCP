@@ -4,7 +4,7 @@ You normally ask for the outcome in plain English. Your agent chooses the Rapidl
 
 ## Standard catalogue
 
-The normal Rapidly connection provides seven tools:
+The default Rapidly catalogue contains seven tools. A connection receives only the tools permitted by its approved OAuth scopes and team access:
 
 | Tool | What it does |
 |---|---|
