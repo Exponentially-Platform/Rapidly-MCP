@@ -81,13 +81,12 @@ This setup is documented, but the recorded Rapidly production smoke covered Clau
 
 ### ChatGPT
 
-Full MCP write support requires an eligible ChatGPT Business, Enterprise or Edu workspace and depends on workspace policy.
+ChatGPT developer mode is available on Pro, Plus, Business, Enterprise and Education accounts on the web. Managed workspaces may also apply their own app policy.
 
-1. An admin or authorised workspace user enables Developer mode for custom MCP apps.
-2. Open **Workspace settings > Apps > Create**.
-3. Add Rapidly with `https://www.rapidly.co/mcp` and choose OAuth.
-4. Select **Scan Tools**, approve the intended Rapidly team and create the draft app.
-5. Start a new chat and select the Rapidly draft app from the tools menu.
+1. Open **Settings > Security and login** and enable **Developer mode**.
+2. Open **ChatGPT Plugins**, select **+**, and create a developer-mode app for `https://www.rapidly.co/mcp` using OAuth.
+3. Approve the intended Rapidly team. The app appears under **Drafts** in app settings.
+4. Start a new chat, choose **Developer mode** from the plus menu, and select Rapidly for the conversation.
 
 ### Hermes, OpenClaw, Grokbot and other agents
 
