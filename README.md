@@ -6,6 +6,8 @@ Rapidly works inside your AI agent. Bring an idea you already have, or ask it to
 
 Rapidly builds the Lean Canvas, turns the riskiest assumption into a measurable hypothesis, researches a pass mark and designs practical experiments. Your agent builds the test. Real customers give you the evidence.
 
+Rapidly MCP is in beta.
+
 Works with Claude, Codex, ChatGPT and Hermes. OpenClaw, Grokbot and other agents can also use Rapidly if they support remote MCP.
 
 [Connect Rapidly](https://www.rapidly.co/rapidly-mcp) · [Let your agent set it up](docs/for-agents.md) · [Manual setup](docs/quickstart.md)
@@ -30,11 +32,11 @@ You can. We do. The answer will probably look reasonable.
 
 Rapidly is useful because the method is already there. For one idea, the core run:
 
-1. builds a full Lean Canvas with `independent_design_lean_canvas`;
-2. turns the riskiest assumption into a market engagement hypothesis and researches the pass threshold with `independent_design_hypothesis`;
-3. creates three to five named Pretotyping experiments, recommends the smallest useful one and returns its build prompt with `independent_design_experiments`.
+1. saves the idea and builds its full Lean Canvas;
+2. turns the riskiest assumption into a measurable hypothesis and researches the pass threshold;
+3. saves three to five complete experiment options, recommends the easiest credible first test and generates one build prompt for that recommendation.
 
-[See all 21 Rapidly tools and what they do](docs/tools.md).
+Your agent handles that complete run through `test_idea`. The other experiment options stay saved with the idea, ready to use later. [See the seven standard tools and three advanced method tools](docs/tools.md).
 
 Successful work is also saved with the idea in your Rapidly team instead of disappearing in a chat thread. You can bring the result back later and decide whether to fund it, fix it, stop it or run another test.
 
@@ -80,15 +82,15 @@ Ask Rapidly to generate [one or more] ideas for [company name] using [website UR
 
 Rapidly researches the company, returns grounded ideas with sources and offers to take one through the method. If you're bringing your own idea, add anything you already know, where that information came from and any constraints that matter.
 
-Rapidly works through the method one stage at a time. After each result, accept the next step. This can be as simple as replying `yes`. If your agent doesn't offer it, ask Rapidly to continue the same idea.
+Rapidly works through the method one saved stage at a time. Your agent should continue the same `test_idea` automatically while Rapidly reports that work is still in progress. Keep the returned project link; if the conversation stops, include that link or project ID when asking Rapidly to continue. You don't need to choose stages, decide whether to save or manage a retry key.
 
 By the end, you should have:
 
 - sources you can open and facts you can review;
 - a full Lean Canvas;
-- a market engagement hypothesis with a measurable customer behaviour and proposed pass threshold;
-- three to five Pretotyping options, GO and NO-GO rules, and a recommended first experiment;
-- a build prompt for the test asset.
+- a measurable hypothesis and decision rule suited to the idea's riskiest assumption;
+- three to five saved experiment options, GO and NO-GO rules, and a recommended first experiment;
+- one build prompt for the recommended test asset.
 
 Review the output, ask your agent to build the asset, then put the test in front of real customers.
 
@@ -110,6 +112,7 @@ Email [hello@rapidly.co](mailto:hello@rapidly.co) with the subject `Rapidly MCP 
 ## Current limits
 
 - A trial includes five new ideas. Taking one idea through its Canvas, hypothesis and experiments still counts as one idea.
+- Paid plans include ten ideas per paid seat per calendar month.
 - Need more? Email [hello@rapidly.co](mailto:hello@rapidly.co) to discuss the right next step for your team.
 - Generated facts, cited sources and proposed targets need human review before use.
 
