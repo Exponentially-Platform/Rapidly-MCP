@@ -43,6 +43,16 @@ For another agent, use OAuth if you support it. Otherwise, show me how to store 
 Explain what you will change before you make the connection. When it is ready, start a fresh conversation and check the connection with this request: Ask Rapidly to find one idea for [company name] using [website URL]. Focus on [optional customer, problem or opportunity].
 ```
 
+## Run three ideas in one go
+
+When the user asks:
+
+```text
+Ask Rapidly for three ideas for [company], focused on [opportunity], and fully test all three in one go.
+```
+
+Call `find_ideas` once with a count of three. Then run `test_idea` for each returned project, immediately repeating it with that `project_id` while Rapidly reports `status: in_progress`. Do not stop after generating the ideas or experiments. Return the completed results with one recommended first test and its build prompt for each idea.
+
 ## Run one idea
 
 Start with:

@@ -2,6 +2,14 @@
 
 You can start by asking Rapidly to generate an idea or by giving it an idea you already have.
 
+## Generate and test three ideas in one go
+
+```text
+Ask Rapidly for three ideas for [company], focused on [opportunity], and fully test all three in one go.
+```
+
+Rapidly should save three ideas, then take each one through its Canvas, hypothesis and three to five experiment options. The completed result should include one recommended first test and one build prompt for each idea.
+
 ## Generate one or more ideas
 
 ```text
