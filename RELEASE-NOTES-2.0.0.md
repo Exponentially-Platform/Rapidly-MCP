@@ -10,6 +10,6 @@ This is a breaking beta catalogue change. The former 21 public tool names are no
 
 New trial buckets start with five ideas. Existing higher trial buckets and explicit overrides are not reduced. Paid accounts continue to receive ten ideas per paid seat each calendar month.
 
-The Registry package version is `2.0.0`. Rapidly's live service implementation continues to report version `1.0`; the live `tools/list` response is the authority for the tools available to each connection.
+When published after the observation gate, this release will become Registry package `2.0.0`. The latest published package remains `1.0.1` until then. Rapidly's live service implementation continues to report version `1.0`; the live `tools/list` response is the authority for the tools available to each connection.
 
 See [what Rapidly can do](docs/tools.md) and the [setup guide](docs/quickstart.md).
