@@ -6,7 +6,7 @@ Rapidly works inside your AI agent. Bring an idea you already have, or ask it to
 
 Rapidly builds the Lean Canvas, turns the riskiest assumption into a measurable hypothesis, researches a pass mark and designs practical experiments. Your agent builds the test. Real customers give you the evidence.
 
-Rapidly MCP is in beta.
+Rapidly MCP is generally available.
 
 Works with Claude, Codex, ChatGPT and Hermes. OpenClaw, Grokbot and other agents can also use Rapidly if they support remote MCP.
 
@@ -67,6 +67,14 @@ https://www.rapidly.co/mcp
 Use OAuth if the agent supports it. Otherwise, follow the [agent setup instructions](docs/for-agents.md) to keep your personal token out of chat and project files.
 
 ## Start with an idea
+
+To generate three ideas and fully test all three in one request:
+
+```text
+Ask Rapidly for three ideas for [company], focused on [opportunity], and fully test all three in one go.
+```
+
+Rapidly should save all three ideas, complete each Canvas and hypothesis, save three to five experiment options for each idea, and return one build prompt for each recommended first test.
 
 Use one you already have:
 
