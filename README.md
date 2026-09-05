@@ -8,6 +8,8 @@ Rapidly builds the Lean Canvas, turns the riskiest assumption into a measurable 
 
 Rapidly MCP is generally available.
 
+[Version 2.0.0](RELEASE-NOTES-2.0.0.md) is published in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/co.rapidly%2Frapidly/versions/2.0.0).
+
 Works with Claude, Codex, ChatGPT and Hermes. OpenClaw, Grokbot and other agents can also use Rapidly if they support remote MCP.
 
 [Connect Rapidly](https://www.rapidly.co/rapidly-mcp) · [Let your agent set it up](docs/for-agents.md) · [Manual setup](docs/quickstart.md)
