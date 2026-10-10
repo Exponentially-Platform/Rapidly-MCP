@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "rapidly",
+  "version": "2.1.0",
+  "description": "Test the idea before you build it. Rapidly turns an idea into a Lean Canvas, a measurable hypothesis and Pretotyping experiments, then returns a build prompt for the smallest test worth running.",
+  "author": {
+    "name": "Exponentially",
+    "email": "hello@rapidly.co",
+    "url": "https://www.exponentially.com/rapidly"
+  },
+  "homepage": "https://www.rapidly.co/rapidly-mcp",
+  "repository": "https://github.com/Exponentially-Platform/Rapidly-MCP",
+  "license": "MIT",
+  "keywords": [
+    "pretotyping",
+    "idea validation",
+    "experiments",
+    "lean canvas",
+    "hypothesis",
+    "product discovery"
+  ],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "interface": {
+        "displayName": "Rapidly",
+        "shortDescription": "Test ideas before you build them",
+        "longDescription": "Test the idea before you build it. Rapidly works inside your AI agent.\n\nBring an idea you already have, or ask Rapidly to find one from a company website. Rapidly saves the idea, builds its Lean Canvas and measurable hypothesis, then saves three to five practical Pretotyping experiments.\n\nIt recommends the easiest credible first experiment for the riskiest assumption and generates one build prompt for that recommendation. The other experiment options stay saved for later. Your agent builds the test. Real customers provide the evidence.",
+        "developerName": "Exponentially",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://www.rapidly.co/rapidly-mcp",
+        "privacyPolicyURL": "https://www.rapidly.co/privacy",
+        "termsOfServiceURL": "https://www.rapidly.co/terms",
+        "defaultPrompt": [
+          "Ask Rapidly to test this idea before I build it: a weekly meal-planning service for shift workers.",
+          "Ask Rapidly for three ideas for [company], focused on [opportunity], and fully test all three in one go.",
+          "Show me our saved ideas and recommend which one needs evidence next."
+        ],
+        "brandColor": "#D63B34",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

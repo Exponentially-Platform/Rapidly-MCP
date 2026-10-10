@@ -1,0 +1,21 @@
+{
+  "name": "rapidly",
+  "owner": {
+    "name": "Exponentially",
+    "email": "hello@rapidly.co"
+  },
+  "description": "Rapidly for Claude Code: test the idea before you build it.",
+  "plugins": [
+    {
+      "name": "rapidly",
+      "source": "./plugins/rapidly",
+      "description": "Test the idea before you build it. Rapidly turns an idea into a Lean Canvas, a measurable hypothesis and Pretotyping experiments, then returns a build prompt for the smallest test worth running.",
+      "category": "productivity",
+      "keywords": [
+        "pretotyping",
+        "idea validation",
+        "experiments"
+      ]
+    }
+  ]
+}
