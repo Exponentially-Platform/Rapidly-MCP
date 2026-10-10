@@ -8,6 +8,22 @@ https://www.rapidly.co/mcp
 
 Opening that address in a browser returns an empty response by design. Follow the path for your agent below.
 
+## Claude Code or Codex plugin
+
+The quickest setup is the Rapidly plugin. It adds the connection and skills that tell your agent when to use Rapidly.
+
+```text
+/plugin marketplace add Exponentially-Platform/Rapidly-MCP
+/plugin install rapidly@rapidly
+```
+
+Those are Claude Code commands; then run `/mcp`, choose Rapidly and sign in. In Codex:
+
+```bash
+codex plugin marketplace add Exponentially-Platform/Rapidly-MCP
+codex plugin add rapidly@rapidly
+```
+
 ## New customer with a personal token
 
 Open [rapidly.co/rapidly-mcp](https://www.rapidly.co/rapidly-mcp). Enter your name, email and team name. Rapidly creates the account and team, then shows the token once.
