@@ -1,0 +1,20 @@
+{
+  "name": "rapidly",
+  "interface": {
+    "displayName": "Rapidly"
+  },
+  "plugins": [
+    {
+      "name": "rapidly",
+      "source": {
+        "source": "local",
+        "path": "./plugins/rapidly"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

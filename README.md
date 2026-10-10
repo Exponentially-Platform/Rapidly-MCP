@@ -44,6 +44,29 @@ Successful work is also saved with the idea in your Rapidly team instead of disa
 
 The method combines Alberto Savoia's Pretotyping with our own practice through [4,000+ experiments with client teams](https://www.exponentially.com/) and 200+ workshops.
 
+## Install the Rapidly plugin
+
+The plugin bundles the Rapidly MCP connection with four skills that tell your agent when and how to use it: test an idea, record a test result, choose the next idea, and setup.
+
+In Claude Code:
+
+```text
+/plugin marketplace add Exponentially-Platform/Rapidly-MCP
+/plugin install rapidly@rapidly
+```
+
+Then run `/mcp`, choose Rapidly and sign in.
+
+In Codex:
+
+```bash
+codex plugin marketplace add Exponentially-Platform/Rapidly-MCP
+```
+
+Then open the Plugins Directory in the ChatGPT desktop app or Codex, choose the Rapidly marketplace and install Rapidly. Sign in when Rapidly asks.
+
+The plugin lives in [plugins/rapidly](plugins/rapidly). [`scripts/package-openai-plugin.sh`](scripts/package-openai-plugin.sh) builds the ZIP for OpenAI's plugin directory.
+
 ## Connect Rapidly
 
 ### If you're new to Rapidly

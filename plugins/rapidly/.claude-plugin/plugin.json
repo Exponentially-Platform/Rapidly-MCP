@@ -1,0 +1,22 @@
+{
+  "name": "rapidly",
+  "displayName": "Rapidly",
+  "version": "2.1.0",
+  "description": "Test the idea before you build it. Rapidly turns an idea into a Lean Canvas, a measurable hypothesis and Pretotyping experiments, then returns a build prompt for the smallest test worth running.",
+  "author": {
+    "name": "Exponentially",
+    "email": "hello@rapidly.co",
+    "url": "https://www.exponentially.com/rapidly"
+  },
+  "homepage": "https://www.rapidly.co/rapidly-mcp",
+  "repository": "https://github.com/Exponentially-Platform/Rapidly-MCP",
+  "license": "MIT",
+  "keywords": [
+    "pretotyping",
+    "idea validation",
+    "experiments",
+    "lean canvas",
+    "hypothesis",
+    "product discovery"
+  ]
+}
