@@ -1,7 +1,7 @@
 {
   "name": "rapidly",
   "displayName": "Rapidly",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Test the idea before you build it. Rapidly turns an idea into a Lean Canvas, a measurable hypothesis and Pretotyping experiments, then returns a build prompt for the smallest test worth running.",
   "author": {
     "name": "Exponentially",

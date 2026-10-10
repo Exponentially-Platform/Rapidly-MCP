@@ -10,6 +10,13 @@ https://www.rapidly.co/mcp
 
 ## What your agent needs to do
 
+If you are Claude Code or Codex, install the Rapidly plugin rather than adding the bare MCP server. The plugin includes the same connection plus skills that tell you when to use Rapidly and how to run it.
+
+- Claude Code: run `/plugin marketplace add Exponentially-Platform/Rapidly-MCP`, then `/plugin install rapidly@rapidly`, then sign in through `/mcp`.
+- Codex: run `codex plugin marketplace add Exponentially-Platform/Rapidly-MCP`, then `codex plugin add rapidly@rapidly`, and complete the sign-in when Codex asks.
+
+If you can't install plugins, connect the MCP server directly:
+
 1. If you are Codex, run both commands below in order:
 
    ```bash
@@ -29,7 +36,7 @@ If the user needs a personal token, send them to [rapidly.co/rapidly-mcp](https:
 ## Copy this request into your agent
 
 ```text
-Connect Rapidly as a remote MCP server using https://www.rapidly.co/mcp.
+Connect Rapidly. If you are Claude Code or Codex, install the Rapidly plugin from the marketplace at Exponentially-Platform/Rapidly-MCP (plugin rapidly@rapidly), which includes the connection and its skills. Otherwise, connect Rapidly as a remote MCP server using https://www.rapidly.co/mcp.
 
 Complete the connection, including authentication. If you are Codex, run both commands below in order:
 
