@@ -65,6 +65,8 @@ codex plugin marketplace add Exponentially-Platform/Rapidly-MCP
 
 Then open the Plugins Directory in the ChatGPT desktop app or Codex, choose the Rapidly marketplace and install Rapidly. Sign in when Rapidly asks.
 
+In Cursor, the repository carries a [Cursor marketplace manifest](.cursor-plugin/marketplace.json) that points at the same plugin. Install Rapidly from the Cursor marketplace once it is listed, then sign in when Rapidly asks.
+
 The plugin lives in [plugins/rapidly](plugins/rapidly). [`scripts/package-openai-plugin.sh`](scripts/package-openai-plugin.sh) builds the ZIP for OpenAI's plugin directory.
 
 ## Connect Rapidly

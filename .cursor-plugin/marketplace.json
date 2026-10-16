@@ -1,0 +1,21 @@
+{
+  "name": "rapidly",
+  "owner": {
+    "name": "Exponentially",
+    "email": "hello@rapidly.co"
+  },
+  "metadata": {
+    "description": "Rapidly for Cursor: test the idea before you build it."
+  },
+  "plugins": [
+    {
+      "name": "rapidly",
+      "source": "./plugins/rapidly",
+      "description": "Test the idea before you build it. Rapidly turns an idea into a Lean Canvas, a measurable hypothesis and Pretotyping experiments, then returns a build prompt for the smallest test worth running.",
+      "version": "2.1.1",
+      "logo": "./plugins/rapidly/assets/logo.png",
+      "category": "Productivity",
+      "keywords": ["pretotyping", "idea validation", "experiments"]
+    }
+  ]
+}
