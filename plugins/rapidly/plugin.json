@@ -37,7 +37,7 @@
           "Ask Rapidly for three ideas for [company], focused on [opportunity], and fully test all three in one go.",
           "Show me our saved ideas and recommend which one needs evidence next."
         ],
-        "brandColor": "#D63B34",
+        "brandColor": "#0C24F5",
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/logo.png"
       }
