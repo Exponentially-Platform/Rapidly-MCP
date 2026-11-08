@@ -67,7 +67,7 @@ Then open the Plugins Directory in the ChatGPT desktop app or Codex, choose the 
 
 In Cursor, the repository carries a [Cursor marketplace manifest](.cursor-plugin/marketplace.json) that points at the same plugin. Install Rapidly from the Cursor marketplace once it is listed, then sign in when Rapidly asks.
 
-The plugin lives in [plugins/rapidly](plugins/rapidly). [`scripts/package-openai-plugin.sh`](scripts/package-openai-plugin.sh) builds the ZIP for OpenAI's plugin directory.
+The plugin lives in [plugins/rapidly](plugins/rapidly). [`scripts/package-openai-plugin.sh`](scripts/package-openai-plugin.sh) builds the ZIP for OpenAI's plugin directory. The ZIP takes the published plugin's package name and drops `mcp.json`'s auth block, because OpenAI requires both for an update. An optional second argument merges the reviewer test cases and release notes, which are kept outside this public repo.
 
 ## Connect Rapidly
 
