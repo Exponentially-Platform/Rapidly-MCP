@@ -24,12 +24,13 @@
       "onboardingSkill": "./skills/setup/SKILL.md",
       "interface": {
         "displayName": "Rapidly",
-        "shortDescription": "Test ideas before you build them",
+        "shortDescription": "Test ideas before building",
         "longDescription": "Test the idea before you build it. Rapidly works inside your AI agent.\n\nBring an idea you already have, or ask Rapidly to find one from a company website. Rapidly saves the idea, builds its Lean Canvas and measurable hypothesis, then saves three to five practical Pretotyping experiments.\n\nIt recommends the easiest credible first experiment for the riskiest assumption and generates one build prompt for that recommendation. The other experiment options stay saved for later. Your agent builds the test. Real customers provide the evidence.",
         "developerName": "Exponentially",
-        "category": "Productivity",
+        "category": "Business & Operations",
         "capabilities": ["Read", "Write"],
         "websiteURL": "https://www.rapidly.co/rapidly-mcp",
+        "supportURL": "https://www.rapidly.co/support",
         "privacyPolicyURL": "https://www.rapidly.co/privacy",
         "termsOfServiceURL": "https://www.rapidly.co/terms",
         "defaultPrompt": [
