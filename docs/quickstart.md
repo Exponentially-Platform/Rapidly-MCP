@@ -1,6 +1,6 @@
 # Rapidly MCP setup
 
-Add Rapidly to your agent with this MCP address:
+ChatGPT and Claude connect from Rapidly's listing. Codex, Claude Code and other agents use this MCP address:
 
 ```text
 https://www.rapidly.co/mcp
@@ -81,28 +81,34 @@ claude mcp add --transport http --scope user rapidly https://www.rapidly.co/mcp
 
 Start Claude Code and run `/mcp`. Select Rapidly, complete the OAuth sign-in, choose the intended team and select **Allow access**. Then start a new conversation.
 
-### Claude custom connector
+### Claude
 
-For Claude Pro or Max:
+1. Open [Rapidly in the Claude directory](https://claude.ai/directory/www-rapidly-co) and select **Connect**.
+2. When Rapidly opens, sign in if it asks, choose your Rapidly team and select **Allow access**.
+3. In a conversation, turn Rapidly on from **+ → Connectors**.
 
-1. Open **Settings > Connectors**.
-2. Select **Add custom connector**.
-3. Name it `Rapidly`, enter `https://www.rapidly.co/mcp` and select **Add**.
-4. Select **Connect**, choose the intended Rapidly team and select **Allow access**.
-5. In a new conversation, open **Search and tools** and enable Rapidly.
+On a Team or Enterprise plan, an owner adds Rapidly first: open **Organization settings → Connectors → Browse connectors**, select Rapidly, then select **Add to your team**. Members then follow the steps above.
 
-For Claude Team or Enterprise, an owner first adds Rapidly under **Settings > Connectors > Organization connectors**. Each member then connects it from the same page.
+Only the [advanced connection](tools.md#advanced-method-catalogue) needs the address added by hand:
 
-This setup is documented, but the recorded Rapidly production smoke covered Claude Code rather than the hosted Claude connector.
+1. On a Pro or Max plan, open **Customize → Connectors → + → Add custom connector**. If you own a Team or Enterprise organisation, open **Organization settings → Connectors → Add → Custom → Web**. Members of that organisation then open **Customize → Connectors** and select **Connect**.
+2. Name it `Rapidly` and enter `https://www.rapidly.co/mcp/?catalog=advanced`.
+3. Approve your Rapidly team.
+4. In a conversation, turn Rapidly on from **+ → Connectors**.
 
 ### ChatGPT
 
-ChatGPT developer mode is available on Pro, Plus, Business, Enterprise and Education accounts on the web. Managed workspaces may also apply their own app policy.
+1. Open [Rapidly in ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6a8e5b049a408191aad1429cca54f2cf) and select **Install plugin**. If ChatGPT asks, select **Connect**.
+2. When Rapidly opens, sign in if it asks, choose your Rapidly team and select **Allow access**.
+3. Start a new chat and type `@Rapidly`, or choose Rapidly from the **+** menu.
 
-1. Open **Settings > Security and login** and enable **Developer mode**.
-2. Open **ChatGPT Plugins**, select **+**, and create a developer-mode app for `https://www.rapidly.co/mcp` using OAuth.
-3. Approve the intended Rapidly team. The app appears under **Drafts** in app settings.
-4. Start a new chat, choose **Developer mode** from the plus menu, and select Rapidly for the conversation.
+You don't need Developer mode. If your workspace shows **Disabled by admin**, ask a workspace admin to review Rapidly in **Admin Console → Plugins**.
+
+Only the [advanced connection](tools.md#advanced-method-catalogue) needs the address added by hand, and ChatGPT gives a custom server its full tools only on Business, Enterprise and Education workspaces:
+
+1. An admin or owner opens **Plugins**, selects **+**, then **Add custom MCP server**.
+2. Name it `Rapidly`, enter `https://www.rapidly.co/mcp/?catalog=advanced` and choose OAuth.
+3. Accept the risk warning, select **Create as a plugin** and approve your Rapidly team.
 
 ### Hermes, OpenClaw, Grokbot and other agents
 
