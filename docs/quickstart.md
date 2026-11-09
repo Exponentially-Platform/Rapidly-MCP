@@ -100,7 +100,7 @@ Only the [advanced connection](tools.md#advanced-method-catalogue) needs the add
 
 1. Open [Rapidly in ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6a8e5b049a408191aad1429cca54f2cf) and select **Install plugin**. If ChatGPT asks, select **Connect**.
 2. When Rapidly opens, sign in if it asks, choose your Rapidly team and select **Allow access**.
-3. Start a new chat and type `@Rapidly`, or choose Rapidly from the **+** menu.
+3. Start a new chat and ask for what you want, such as "Ask Rapidly to test this idea: [describe your idea]". If ChatGPT doesn't use Rapidly, choose it from the **+** menu.
 
 You don't need Developer mode. If your workspace shows **Disabled by admin**, ask a workspace admin to review Rapidly in **Admin Console → Plugins**.
 
