@@ -15,6 +15,8 @@ If you are Claude Code or Codex, install the Rapidly plugin rather than adding t
 - Claude Code: run `/plugin marketplace add Exponentially-Platform/Rapidly-MCP`, then `/plugin install rapidly@rapidly`, then sign in through `/mcp`.
 - Codex: run `codex plugin marketplace add Exponentially-Platform/Rapidly-MCP`, then `codex plugin add rapidly@rapidly`, and complete the sign-in when Codex asks.
 
+If you are ChatGPT or Claude, send the user to Rapidly's listing rather than adding the address: [Rapidly in ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6a8e5b049a408191aad1429cca54f2cf) or [Rapidly in the Claude directory](https://claude.ai/directory/www-rapidly-co). The [setup steps](quickstart.md) cover what they select there.
+
 If you can't install plugins, connect the MCP server directly:
 
 1. If you are Codex, run both commands below in order:
@@ -36,7 +38,7 @@ If the user needs a personal token, send them to [rapidly.co/rapidly-mcp](https:
 ## Copy this request into your agent
 
 ```text
-Connect Rapidly. If you are Claude Code or Codex, install the Rapidly plugin from the marketplace at Exponentially-Platform/Rapidly-MCP (plugin rapidly@rapidly), which includes the connection and its skills. Otherwise, connect Rapidly as a remote MCP server using https://www.rapidly.co/mcp.
+Connect Rapidly. If you are Claude Code or Codex, install the Rapidly plugin from the marketplace at Exponentially-Platform/Rapidly-MCP (plugin rapidly@rapidly), which includes the connection and its skills. If you are ChatGPT, send me to https://chatgpt.com/plugins/plugin_asdk_app_6a8e5b049a408191aad1429cca54f2cf. If you are Claude, send me to https://claude.ai/directory/www-rapidly-co. Otherwise, connect Rapidly as a remote MCP server using https://www.rapidly.co/mcp.
 
 Complete the connection, including authentication. If you are Codex, run both commands below in order:
 
